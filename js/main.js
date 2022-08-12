@@ -5,4 +5,7 @@
 - A függvény neve `generateList` legyen!
 - A HTML-template egy lista, amelynek a listaelemei a kapott tömb értékeit tartalmazzák.
 */
-let content ['ecc'; 'pecc'; 'kimehetsz'];
+const content = ['ecc', 'pecc', 'kimehetsz'];
+const generateList = () => {content.filter('<ul> <li> ' +  + '</li> <li>' +  + '</li> <li>' +  + '</li> </ul>');
+console.log(generateList);
+};
