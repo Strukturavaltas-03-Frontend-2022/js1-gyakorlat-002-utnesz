@@ -5,5 +5,6 @@
 __térjen vissza__ az elemek egész számra kerekített összegével!
 */
 
-const brutto = [10, 20, 27, 127, 1000];
-brutto.forEach(item  => Math.round(console.log(Math.round(item * 1.27))));
+const numeros = [10, 20, 27, 127, 1000];
+const brutto = numeros.reduce((previousValue, currentValue) => previousValue + currentValue);
+console.log(Math.round(brutto * 1.27));
