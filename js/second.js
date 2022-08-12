@@ -18,8 +18,19 @@ hogy a tömb minden eleme number típusú-e vagy sem
 hogy a tömbben van-e number típusú elem vagy sem
 */
 
-const anyArray = ['igaz', true, 42];
+'use strict'
 
-const checker = (anyArray, 'Magrathea');
-const exists = anyArray.filter([i] === "Magrathea");
+const anyArray = [{
+    firstName:'Richard',
+    lastName: 'Hendricks',
+    age: 42,
+    planet:'Magrathea'}
+    ['Mambo']
+];
+
+
+
+const exists = anyArray.some(anyArray => anyArray.age === 42);
 console.log(exists);
+
+const checker = () => {};
