@@ -8,30 +8,17 @@ __térjen vissza__ az elemek egész számra kerekített összegével!
 
 'use strict'
 
-//const amountArray = [10, 20, 27, 127, 1000];
-//const bruttoSum = amountArray.reduce((previousValue, currentValue) => previousValue + currentValue);
-//console.log(Math.round(bruttoSum * 1.27));
-//brutto();
-//
-//
-//const numericArray = [10, 20, 30, 40, 50];
-//const brutto = numericArray.map(item => item * 1.27);
-//console.log(Math.round(brutto.reduce((previousValue, currentValue) => previousValue + currentValue)));
-//return brutto;
+//const brutto = (arrNr) => {
+//    const bruttoArrNr = arrNr.map((item)=>item*1.27);
+//    const sumBruttoArrNr =bruttoArrNr.reduce((previousValuse, currentValue) => (previousValuse + currentValue));
+//    const finalSum = Math.round(sumBruttoArrNr);
+//    return finalSum
+//};
+
+const brutto = (arrNr) => {
+    return Math.round(arrNr.map((item)=>item*1.27).reduce((previousValuse, currentValue) => (previousValuse + currentValue)));
+
+};
 
 
-const numericArray = [10, 20, 30, 40, 50];
-const brutto
-function brutto () = numericArray.map(item => item * 1.27)
-
-const numericArray = [10, 20, 30, 40, 50];
-const a = brutto(numericArray);
-brutto(numericArray);
-console.log(a);
-
-function brutto(param){
-    sum = 0;
-    param.forEach(item => sum = sum + (item * 1.27));
-    return (Math.round(sum));
-}
 
