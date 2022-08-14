@@ -20,10 +20,10 @@ hogy a tömbben van-e number típusú elem vagy sem
 
 'use strict'
 
-const checker = (nrArr, primitive) => {
+const checker = (nrArr, anything) => {
     return {
-        exists: nrArr.includes(primitive),
-        index: nrArr.includes(primitive) === true ? nrArr.indexOf(primitive) : -1,
+        exists: nrArr.includes(anything),
+        index: nrArr.includes(anything) === true ? nrArr.indexOf(anything) : -1,
         allElementsAreNumbers: nrArr.every((item) => typeof item === 'number'),
         someElementsAreNumbers: nrArr.some((item) => typeof item === 'number'),
     };
