@@ -20,17 +20,12 @@ hogy a tömbben van-e number típusú elem vagy sem
 
 'use strict'
 
-const anyArray = [{
-    firstName:'Richard',
-    lastName: 'Hendricks',
-    age: 42,
-    planet:'Magrathea'}
-    ['Mambo']
-];
-
-
-
-const exists = anyArray.some(anyArray => anyArray.age === 42);
-console.log(exists);
-
-const checker = () => {};
+const checker = (nrArr, primitive) => {
+    return {
+        exists: nrArr.includes(primitive),
+        index: nrArr.includes(primitive) === true ? nrArr.indexOf(primitive) : -1,
+        allElementsAreNumbers: nrArr.every((item) => typeof item === 'number'),
+        someElementsAreNumbers: nrArr.some((item) => typeof item === 'number'),
+    };
+};
+    
