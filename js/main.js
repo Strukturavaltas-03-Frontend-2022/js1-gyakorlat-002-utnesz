@@ -5,6 +5,11 @@
 - A függvény neve `generateList` legyen!
 - A HTML-template egy lista, amelynek a listaelemei a kapott tömb értékeit tartalmazzák.
 */
-const generateList = (stringArr) => {
-    return 
+const generateList = (strArray) => {
+    return ("<ul>" + 
+    strArray.forEach((string) => {
+        "<li>" + string + "</li>";
+    })+
+    "</ul>"
+    );
 };
