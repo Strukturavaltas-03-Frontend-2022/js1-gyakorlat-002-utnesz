@@ -23,7 +23,7 @@ hogy a tömbben van-e number típusú elem vagy sem
 const checker = (nrArr, anything) => {
     return {
         exists: nrArr.includes(anything),
-        index: nrArr.includes(anything) === true ? nrArr.indexOf(anything) : -1,
+        index: nrArr.indexOf(anything),
         allElementsAreNumbers: nrArr.every((item) => typeof item === 'number'),
         someElementsAreNumbers: nrArr.some((item) => typeof item === 'number'),
     };
