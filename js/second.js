@@ -3,8 +3,10 @@
 - Írj egy olyan függvénykifejezést, amely paraméterként kap egy tetszőleges 
 típusú elemeket tartalmazó tömböt és egy tetszőleges primitív értéket!
 - A függvény neve `checker` legyen!
+
 - A függvény __visszatérési értéke__ egy objektum, amely a következő 
 property-ket tartalmazza:
+
 - `exists`: Értéke true/false attól függően, hogy a második paraméterként 
 megadott érték megtalálható-e a tömbben
 - `index`: Értéke egy szám; ha a második paraméterként megadott érték 
@@ -15,3 +17,15 @@ hogy a tömb minden eleme number típusú-e vagy sem
 - `someElementsAreNumbers`: Értéke true/false attól függően, 
 hogy a tömbben van-e number típusú elem vagy sem
 */
+
+'use strict'
+
+const checker = (nrArr, anything) => {
+    return {
+        exists: nrArr.includes(anything),
+        index: nrArr.indexOf(anything),
+        allElementsAreNumbers: nrArr.every((item) => typeof item === 'number'),
+        someElementsAreNumbers: nrArr.some((item) => typeof item === 'number'),
+    };
+};
+    
